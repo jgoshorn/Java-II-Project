@@ -89,7 +89,14 @@ public class CovidVaccinationDisplay {
                // System.out.println("this line works");
 
                 StringTokenizer stringTokenizer = new StringTokenizer(line, ",");
-
+                
+                /*
+                * this while loop is what doesn't work at the moment
+                * specifically the if statement doesn't compare (check if equal) the code entered from the combo box
+                * which means it won't output anything
+                *
+                *
+                */
                 while(stringTokenizer.hasMoreTokens()){
 
                     System.out.println(stringTokenizer.nextToken());
@@ -128,7 +135,7 @@ public class CovidVaccinationDisplay {
 
 
                     if(isoCode.equals(code)){
-                        System.out.println("work"+code);
+                        System.out.println("work");
                         fileOutput = isoCode+"\t"+continent+"\t"+location+"\t"+lastUpdated+"\t"+totalVaccinations+"\t"
                         +peopleVaccinated+"\t"+peopleFullyVaccinated+"\t"+newVaccinations+"\t"+totalVaccPerHunderd+"\t"
                         +peopleVaccPerHundred+"\t"+fullyVaccPerHundred+"\t"+brandName;
@@ -186,7 +193,7 @@ public class CovidVaccinationDisplay {
             panel.add(displayButton);
 
 
-            // calculate on press action
+            // display on press action
             displayButton.addActionListener(new ActionListener() {
                 public void actionPerformed(ActionEvent e){
                     String countryIsoCode = counrtyComboBox.getItemAt(counrtyComboBox.getSelectedIndex());
