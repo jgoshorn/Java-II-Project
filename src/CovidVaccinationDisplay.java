@@ -17,17 +17,15 @@ import javax.swing.JTextField;
 
 public class CovidVaccinationDisplay {
     private static JTextArea displayTextArea;
-    static String[] codes = {
+   static String[] codes = {
             "AFG:1","ALB:2","AND:3","AGO:4","AIA:5","ARG:6","AUS:7","AUT:8","AZE:9","BHS:10","BHR:11","BGD:12","BRD:13","BLR:14","BEL:15",
             "BLZ:16","BMU:17","BOL:18","BRA:19","BGR:20","KHM:21","CAN:22","CYM:23","CHL:24","CHN:25","COL:26","CRI:27","CIV:28","HRV:29","CYP:30",
-            "CZE:31", "DNK:32", "DMA:33", "ECU:34","SLV:35","GNQ:36", "EST:37", "FRO:38", "FIN:39", "FRA:40", "DEU:41", "GHA:42", "GIB:43", 
-            "GRC:44", "GRD:45", "GTM:46", "GUY:47", "HND:48", "HKG:49", "HUN:50", "ISL:51", "IND:52","IDN:53", "IRL:54", "IMN:55", "ISR:56",
-            "ITA:57", "JAM:58", "JPN:59", "JEY:60", "JOR:61", "KAZ:62", "KEN:63", "LVA:64", "LBN:65", "LTU:66", "LUX:67", "MAC:68", "MWI:69",
-            "MYS:70", "MDV:71", "MLT:72", "MEX:73", "MDA:74", "MCO:75", "MNG:76", "MNE:77", "MSR:78", "MAR:79", "MOZ:80", "NLD:81", "NZL:82",
-            "MKD:83", "NOR:84", "OMN:85", "PAN:86","PRY:87", "PER:88", "PHL:89", "PRT:90", "QAT:91", "ROU:92", "RUS:93", "RWA:94", "SHN:95", 
-            "KNA:96", "LCA:97", "SMR:98", "SAU:99", "SEN:100", "SRB:101", "SYC:102", "SGP:103","SVK:104", "SVN:105", "ZAF:106", "KOR:107", "SSD:108",
-            "ESP:109", "LKA:110", "SUR:111", "SWE:112", "CHE:113", "THA:114", "TUR:115", "UGA:116", "UKR:117", "GBR:118", "USA:119", "URY:120","VNM:121",
-                                       "ZWE:122"};
+            "CZE:31", "DNK:32", "DMA:33", "DOM:34 ","ECU:35 ","SLV:36 ", "GNQ:37", "EST:38","FRO:39","FIN:40","DEU:41","GHA:42","GIB:43","GRC:44",
+            "GRD:45","GTM:46","GGY:47","GUY:48","HND:49","HKG:50","HUN:51","ISL:52","IND:53","IRL:54","IMN:55","ISR:56","ITA57","JAM:58","JPN:59",
+            "JEY:60","JOR:61","KAZ:62","KEN:63","LVA:64","LBN:65","LTU:66","LUX:67","MAC:68","MWI:69","MYS:70","MDV:71","MTL:72","MEX:73","MDA:74",
+            "MCO:75","MNG:76","MNE:77","MSR:78","MAR:79","MOZ:80","NLD:81","NZL:82","MKD:83","NOR:84","OMN:85","PAN:86","PRY:87","PER:88","PHL:89",
+            "POL:90","PRT:91","QAT:92","ROU:93","RUS:94","RWA:95","SHN:96","KNA:97","LCA:98","SMR:99","SAU:100","SEN:101","SRB:102","SYC:103","SGP:104",
+            "SVK:105","SVN:106","ZAF:107","KOR:108","SSD:109","ESP:110","LKA:111","SUR:112","SWE:113","CHE:114","THA:115","TUN:116","TUR:117","UGA:118","UKR:119","ARE:120","GBR:121",":USA:122","URY:123","VNM:124","ZWE:125"};
             static String outPut = " ";
             /**
              * 
