@@ -17,7 +17,7 @@ import javax.swing.JTextField;
 
 public class CovidVaccinationDisplay {
     private static JTextArea displayTextArea;
-   static String[] codes = {
+    static String[] codes = {
             "AFG:1","ALB:2","AND:3","AGO:4","AIA:5","ARG:6","AUS:7","AUT:8","AZE:9","BHS:10","BHR:11","BGD:12","BRD:13","BLR:14","BEL:15",
             "BLZ:16","BMU:17","BOL:18","BRA:19","BGR:20","KHM:21","CAN:22","CYM:23","CHL:24","CHN:25","COL:26","CRI:27","CIV:28","HRV:29","CYP:30",
             "CZE:31", "DNK:32", "DMA:33", "DOM:34 ","ECU:35 ","SLV:36 ", "GNQ:37", "EST:38","FRO:39","FIN:40","DEU:41","GHA:42","GIB:43","GRC:44",
@@ -106,7 +106,7 @@ public class CovidVaccinationDisplay {
                         int n = Integer.parseInt(countryCodeTextField.getText().trim()); 
                                      
                         try(BufferedReader bufferedReader = new BufferedReader(new FileReader("owid.txt"))){
-                            for(int i = 0; i < n -1; i++)
+                            for(int i = 0; i < n +1; i++)
                                 bufferedReader.readLine();
                             outPut = bufferedReader.readLine();
                             System.out.println(outPut);
