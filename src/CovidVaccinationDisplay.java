@@ -38,7 +38,7 @@ public class CovidVaccinationDisplay {
             public static void main(String[] args)throws IOException {
                 // creates JFrame instance
                 JFrame frame = new JFrame("Country Vaccination");
-                frame.setSize(2000,900);
+                frame.setSize(1500,900);
                 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     
                 frame.addWindowListener(new WindowAdapter(){
@@ -56,7 +56,7 @@ public class CovidVaccinationDisplay {
                 JScrollPane scrollPane = new JScrollPane(displayTextArea);
                 //panel.add(scrollPane, BorderLayout.WEST);
                 displayTextArea = new JTextArea();
-                displayTextArea.setBounds(10,350,2000,500);
+                displayTextArea.setBounds(10,350,1500,500);
                 displayTextArea.setEditable(false);
                 panel.add(displayTextArea);
     
